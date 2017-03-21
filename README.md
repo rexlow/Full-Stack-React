@@ -7,6 +7,12 @@ You will learn how to create a full stack web app with
 > * Express
 > * MongoDB
 
+## To Run
+```
+npm run dev
+npm start
+```
+
 First, let's setup with the old way (you can of course go with create-react-app)
 
 
