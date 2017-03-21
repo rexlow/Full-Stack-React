@@ -2,6 +2,7 @@
 
 You will learn how to create a full stack web app with
 > * ReactJS
+> * EJS
 > * NodeJS
 > * Express
 > * MongoDB
