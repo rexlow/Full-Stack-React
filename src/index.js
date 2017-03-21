@@ -1,21 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const App = (props) => {
-  return(
-    <h2 className="text-center">{props.headerMessage}</h2>
-  )
-};
-
-App.propTypes = {
-  headerMessage: React.PropTypes.string
-}
-
-App.defaultProps = {
-  headerMessage: 'Hello!!'
-}
+import App from './components/App';
 
 ReactDOM.render(
-  <App headerMessage="Hell props" />,
+  <App />,
   document.getElementById('root')
 );
