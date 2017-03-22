@@ -20,9 +20,7 @@ First, let's setup with the old way (you can of course go with create-react-app)
 
 ## Install dependencies
 ```
-npm i -S express
-npm i -S mongodb
-npm i -S react react-dom
+npm i -S react react-dom express mongodb ejs json-loader
 npm i --save-dev webpack
 npm i -D babel-cli babel-loader babel-preset-es2015 babel-preset-stage-2 babel-preset-react
 npm i -D nodemon
@@ -32,7 +30,7 @@ npm i -D eslint eslint-plugin-react babel-eslint
 ## Modify the script object in package.json
 ```
 "scripts": {
-    "start": "nodemon --exec babel-node server.js --ignore public/",
+    "start": "nodemon --exec babel-node server.js --ignore public/",
     "dev": "webpack -wd "
   },
 ```
