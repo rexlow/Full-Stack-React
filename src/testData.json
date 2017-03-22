@@ -2,23 +2,23 @@
   "contests": [
     {
       "id": 1,
-      "category": "Business",
-      "contestName": "Cognitive Building bricks"
+      "categoryName": "Business/Company",
+      "contestName": "Cognitive Building Bricks"
     },
     {
       "id": 2,
-      "category": "Magazine",
-      "contestName": "Cognitive Building bricks"
+      "categoryName": "Magazine/Newsletter",
+      "contestName": "Educating people about sustainable food production"
     },
     {
       "id": 3,
-      "category": "Software Component",
-      "contestName": "Cognitive Building bricks"
+      "categoryName": "Software Component",
+      "contestName": "Big Data Analytics for Cash Circulation"
     },
     {
       "id": 4,
-      "category": "Website",
-      "contestName": "Cognitive Building bricks"
+      "categoryName": "Website",
+      "contestName": "Free programming books"
     }
   ]
 }
