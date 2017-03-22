@@ -10,6 +10,7 @@
   "author": "Rex Low",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.15.3",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
     "json-loader": "^0.5.4",

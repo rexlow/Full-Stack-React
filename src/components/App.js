@@ -1,16 +1,27 @@
 import React from 'react';
-
+import axios from 'axios';
 import Header from './Header';
 import ContestPreview from './ContestPreview';
 
 class App extends React.Component {
 
   state = {
-    pageHeader: 'Naming Contest'
+    pageHeader: 'Naming Contest',
+    contests: []
   }
-
+  
+  componentWillMount() {
+    axios.get('/api/contests')
+      .then(res => {
+        console.log(res)
+      })
+      .catch(console.log(error))
+  }
+  
   componentDidMount() {
-    console.log(this.props)
+    this.setState({
+      contests: data.contests
+    })
   }
 
   render() {
@@ -18,7 +29,7 @@ class App extends React.Component {
       <div className="App">
         <Header message={this.state.pageHeader} />
         <div>
-          {this.props.contests.map(contest => <ContestPreview key={contest.id} {...contest} /> )}
+          {this.state.contests.map(contest => <ContestPreview key={contest.id} {...contest} /> )}
         </div>
       </div>
     )
