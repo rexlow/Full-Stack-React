@@ -7,7 +7,7 @@ import config from './config';
 import apiRouter from './api';
 import sassMiddleware from 'node-sass-middleware';
 import path from 'path';
-import './serverRender';
+import serverRender from './serverRender';
 
 server.use(sassMiddleware({
   src: path.join(__dirname, 'sass'),
@@ -18,9 +18,14 @@ server.set('view engine', 'ejs');
 
 //routes
 server.get('/', (req, res) => {
-  res.render('index', {
-    content: '...'
-  });
+  serverRender()
+    .then((content) => {
+      res.render('index', {
+        content
+      });
+    })
+    .catch((error) => console.log(error))
+  
 });
 
 //middleware
