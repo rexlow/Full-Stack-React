@@ -13,15 +13,11 @@ class App extends React.Component {
   componentWillMount() {
     axios.get('/api/contests')
       .then(res => {
-        console.log(res)
+        this.setState({
+          contests: res.data.contests
+        })
       })
-      .catch(console.log(error))
-  }
-  
-  componentDidMount() {
-    this.setState({
-      contests: data.contests
-    })
+      .catch((error) => console.log(error))
   }
 
   render() {

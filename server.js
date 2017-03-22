@@ -7,6 +7,7 @@ import config from './config';
 import apiRouter from './api';
 import sassMiddleware from 'node-sass-middleware';
 import path from 'path';
+import './serverRender';
 
 server.use(sassMiddleware({
   src: path.join(__dirname, 'sass'),
@@ -32,6 +33,6 @@ server.use('/api', apiRouter);
 //   });
 // });
 
-server.listen(config.port, () => {
+server.listen(config.port, config.host, () => {
   console.log('Express is listening on port: ', config.port);
 });
