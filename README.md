@@ -20,7 +20,7 @@ First, let's setup with the old way (you can of course go with create-react-app)
 
 ## Install dependencies
 ```
-npm i -S react react-dom express mongodb ejs json-loader
+npm i -S react react-dom express mongodb ejs json-loader node-sass-middleware
 npm i --save-dev webpack
 npm i -D babel-cli babel-loader babel-preset-es2015 babel-preset-stage-2 babel-preset-react
 npm i -D nodemon
