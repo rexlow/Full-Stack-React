@@ -1,0 +1,24 @@
+{
+  "contests": [
+    {
+      "id": 1,
+      "category": "Business",
+      "contestName": "Cognitive Building bricks"
+    },
+    {
+      "id": 2,
+      "category": "Magazine",
+      "contestName": "Cognitive Building bricks"
+    },
+    {
+      "id": 3,
+      "category": "Software Component",
+      "contestName": "Cognitive Building bricks"
+    },
+    {
+      "id": 4,
+      "category": "Website",
+      "contestName": "Cognitive Building bricks"
+    }
+  ]
+}

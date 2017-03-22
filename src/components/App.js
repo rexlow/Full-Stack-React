@@ -8,6 +8,10 @@ class App extends React.Component {
     pageHeader: 'Naming Contest'
   }
 
+  componentDidMount() {
+    console.log('Hello')
+  }
+
   render() {
     return(
       <div className="App">
