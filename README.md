@@ -1,5 +1,8 @@
 # Full Stack React App Example
 
+[![License MIT](http://img.shields.io/badge/license-MIT-orange.svg?style=flat)](https://raw.githubusercontent.com/rexlow/Full-Stack-React/master/License)
+
+
 You will learn how to create a full stack web app with
 > * ReactJS
 > * EJS
